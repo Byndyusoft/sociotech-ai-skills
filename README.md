@@ -9,7 +9,7 @@
 **TODO**
 
 ## Карта гипотез
-Скиллы лежат [в этой папке](https://github.com/Byndyusoft/sociotech-ai-skills/tree/main/karta-gipotez)
+Скиллы лежат [в этой папке](https://github.com/Byndyusoft/sociotech-ai-skills/tree/main/карта%20гипотез)
 
 ## Карта процесса-опыта
 **TODO**
