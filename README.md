@@ -11,14 +11,14 @@ MCP.
 | Инструмент | Скилл | Документация | Проверки |
 |---|---|---|---|
 | Связанный SWOT-анализ | [`linked-swot`](skills/linked-swot) | [Описание](docs/linked-swot.md) | [Eval-сценарии](tests/linked-swot-evals.md) |
-| Карта гипотез | [`karta-gipotez`](skills/karta-gipotez) | [Описание](docs/karta-gipotez.md) | [Eval-сценарии](tests/karta-gipotez-evals.md) |
+| Карта гипотез | [`hypothesis-mapping`](skills/hypothesis-mapping) | [Описание](docs/hypothesis-mapping.md) | [Eval-сценарии](tests/hypothesis-mapping-evals.md) |
+| Карта реализации историй | [`story-implementation-map`](skills/story-implementation-map) | [Описание](docs/story-implementation-map.md) | [Eval-сценарии](tests/story-implementation-map-evals.md) |
 
 Машиночитаемый список опубликован в [`catalog.json`](catalog.json).
 
 ## Планируемые инструменты
 
 - [Карта процесса-опыта](https://ashapiro.ru/xpm)
-- [Карта реализации историй](https://ashapiro.ru/articles/sim)
 
 Для нового инструмента добавляется отдельная самодостаточная папка в `skills/`,
 документация в `docs/`, сценарии проверки в `tests/` и запись в каталоге.
@@ -41,10 +41,13 @@ MCP.
 ├── catalog.json
 ├── CONTRIBUTING.md
 ├── skills/
-│   ├── karta-gipotez/
+│   ├── hypothesis-mapping/
 │   │   ├── SKILL.md
 │   │   └── references/
-│   └── linked-swot/
+│   ├── linked-swot/
+│   │   ├── SKILL.md
+│   │   └── references/
+│   └── story-implementation-map/
 │       ├── SKILL.md
 │       └── references/
 ├── docs/
