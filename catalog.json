@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "name": "linked-swot",
+      "display_name": "Связанный SWOT-анализ",
+      "path": "skills/linked-swot",
+      "status": "ready",
+      "source_url": "https://github.com/Byndyusoft/linkedswot",
+      "docs": "docs/linked-swot.md",
+      "evals": "tests/linked-swot-evals.md"
+    },
+    {
+      "name": "karta-gipotez",
+      "display_name": "Карта гипотез",
+      "path": "skills/karta-gipotez",
+      "status": "ready",
+      "source_url": "https://github.com/Byndyusoft/hypothesismapping",
+      "docs": "docs/karta-gipotez.md",
+      "evals": "tests/karta-gipotez-evals.md"
+    }
+  ]
+}
