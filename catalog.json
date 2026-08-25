@@ -2,6 +2,15 @@
   "schema_version": 1,
   "skills": [
     {
+      "name": "sociotech-project-operations",
+      "display_name": "Проектные операции Социотеха",
+      "path": "skills/sociotech-project-operations",
+      "status": "ready",
+      "source_url": "https://sociotech.center/mcp",
+      "docs": "docs/sociotech-project-operations.md",
+      "evals": "tests/sociotech-project-operations-evals.md"
+    },
+    {
       "name": "linked-swot",
       "display_name": "Связанный SWOT-анализ",
       "path": "skills/linked-swot",

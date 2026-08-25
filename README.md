@@ -10,6 +10,7 @@ MCP.
 
 | Инструмент | Скилл | Документация | Проверки |
 |---|---|---|---|
+| Проектные и межкартовые операции MCP | [`sociotech-project-operations`](skills/sociotech-project-operations) | [Описание](docs/sociotech-project-operations.md) | [Eval-сценарии](tests/sociotech-project-operations-evals.md) |
 | Связанный SWOT-анализ | [`linked-swot`](skills/linked-swot) | [Описание](docs/linked-swot.md) | [Eval-сценарии](tests/linked-swot-evals.md) |
 | Карта гипотез | [`hypothesis-mapping`](skills/hypothesis-mapping) | [Описание](docs/hypothesis-mapping.md) | [Eval-сценарии](tests/hypothesis-mapping-evals.md) |
 | Карта реализации историй | [`story-implementation-map`](skills/story-implementation-map) | [Описание](docs/story-implementation-map.md) | [Eval-сценарии](tests/story-implementation-map-evals.md) |
@@ -19,6 +20,9 @@ MCP.
 ## Планируемые инструменты
 
 - [Карта процесса-опыта](https://ashapiro.ru/xpm)
+
+КПО остаётся планируемой, пока в публичном продукте и runtime-схеме MCP нет
+готовой модели операций. Не подменяйте её сущностями КРИ.
 
 Для нового инструмента добавляется отдельная самодостаточная папка в `skills/`,
 документация в `docs/`, сценарии проверки в `tests/` и запись в каталоге.
@@ -45,6 +49,9 @@ MCP.
 │   │   ├── SKILL.md
 │   │   └── references/
 │   ├── linked-swot/
+│   │   ├── SKILL.md
+│   │   └── references/
+│   ├── sociotech-project-operations/
 │   │   ├── SKILL.md
 │   │   └── references/
 │   └── story-implementation-map/
