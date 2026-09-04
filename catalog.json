@@ -36,6 +36,15 @@
       "source_url": "https://ashapiro.ru/articles/sim",
       "docs": "docs/story-implementation-map.md",
       "evals": "tests/story-implementation-map-evals.md"
+    },
+    {
+      "name": "strategy-maturity-assessment",
+      "display_name": "Оценка зрелости стратегирования",
+      "path": "skills/strategy-maturity-assessment",
+      "status": "ready",
+      "source_url": "https://github.com/Byndyusoft/hypothesismapping/blob/main/maturitymodel.md",
+      "docs": "docs/strategy-maturity-assessment.md",
+      "evals": "tests/strategy-maturity-assessment-evals.md"
     }
   ]
 }
