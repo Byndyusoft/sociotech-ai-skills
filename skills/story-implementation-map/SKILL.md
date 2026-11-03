@@ -27,8 +27,8 @@ description: >-
   [`references/facilitation.md`](references/facilitation.md).
 - Для работы с проектом через MCP Социотеха —
   [`references/sociotech-mcp.md`](references/sociotech-mcp.md).
-- Для связи с Картой гипотез, процессным исследованием и дальнейшим
-  проектированием —
+- Для связи с Картой гипотез, передачи условного эффекта, ресурса проверки,
+  результатов реализации, процессного исследования и дальнейшего проектирования —
   [`references/inputs-and-handoff.md`](references/inputs-and-handoff.md).
 - Для разбора формулировок и типовых ошибок —
   [`references/examples.md`](references/examples.md).
