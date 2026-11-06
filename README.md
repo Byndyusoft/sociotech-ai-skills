@@ -25,6 +25,7 @@ MCP и применять сквозные практики поверх эти�
 |---|---|---|---|
 | Связанный SWOT-анализ | [`linked-swot`](skills/linked-swot) | [Описание](docs/linked-swot.md) | [Eval-сценарии](tests/linked-swot-evals.md) |
 | Карта гипотез | [`hypothesis-mapping`](skills/hypothesis-mapping) | [Описание](docs/hypothesis-mapping.md) | [Eval-сценарии](tests/hypothesis-mapping-evals.md) |
+| Карта процесса-опыта | [`experience-process-mapping`](skills/experience-process-mapping) | [Описание](docs/experience-process-mapping.md) | [Eval-сценарии](tests/experience-process-mapping-evals.md) |
 | Карта реализации историй | [`story-implementation-map`](skills/story-implementation-map) | [Описание](docs/story-implementation-map.md) | [Eval-сценарии](tests/story-implementation-map-evals.md) |
 
 **Сквозные скиллы**
@@ -44,6 +45,7 @@ MCP и применять сквозные практики поверх эти�
 | Построить или проверить стратегию: цель, метрики, субъекты, гипотезы, задачи | `hypothesis-mapping` |
 | Найти разные механизмы, разобрать возражения или подготовить проверку одной ветки КГ | `hypothesis-mapping` |
 | Найти и проверить личную или семейную гипотезу | `hypothesis-mapping` с личным сценарием |
+| Исследовать процесс и опыт участников, взаимодействия, каналы и барьеры | `experience-process-mapping` |
 | Спроектировать реализацию через поведение людей на каждом шаге | `story-implementation-map` |
 | Найти проект, прочитать историю, провести структурный аудит, миграцию или массовое изменение | `sociotech-project-operations` |
 | Понять, насколько устойчиво контур работает через стратегию, и выбрать следующую практику | `strategy-maturity-assessment` |
@@ -62,8 +64,11 @@ MCP и применять сквозные практики поверх эти�
 
 1. **Новая стратегия с нуля.** `linked-swot` собирает картину ситуации и
    стратегические ставки → `hypothesis-mapping` превращает ставки в проверяемые
-   гипотезы с метриками и задачами → `story-implementation-map` проектирует
-   реализацию. `sociotech-project-operations` подключается, когда нужно
+   гипотезы с метриками и задачами → `experience-process-mapping` исследует
+   и проектирует процесс и опыт → `story-implementation-map` детализирует
+   реализацию выбранных участков. Это возможный маршрут, а не обязательный
+   водопад. Узел КПО можно связать с существующей историей КРИ по ID.
+   `sociotech-project-operations` подключается, когда нужно
    создавать и связывать сущности в проекте.
 2. **Диагностика существующей практики.** `strategy-maturity-assessment` читает
    проект и артефакты, ставит уровень и называет ближайшее ограничение. Если по
@@ -154,6 +159,7 @@ MCP и применять сквозные практики поверх эти�
 |---|---|
 | `linked-swot` | [Связанный SWOT-анализ](https://github.com/Byndyusoft/linkedswot) |
 | `hypothesis-mapping` | [База знаний о Карте гипотез](https://github.com/Byndyusoft/hypothesismapping) |
+| `experience-process-mapping` | [База знаний КПО](https://github.com/Byndyusoft/xp-mapping) и [методичка автора](https://ashapiro.gitbook.io/xpm) |
 | `story-implementation-map` | [Карта реализации историй](https://ashapiro.ru/articles/sim) |
 | `sociotech-project-operations` | [Возможности MCP Социотеха](https://sociotech.center/mcp) |
 | `strategy-maturity-assessment` | [Модель зрелости стратегирования](https://github.com/Byndyusoft/hypothesismapping/blob/main/maturitymodel.md) |
@@ -162,12 +168,15 @@ MCP и применять сквозные практики поверх эти�
 например `references/standard-1.2.md`. При выходе новой версии добавляйте новый
 файл и явно указывайте приоритет более нового стандарта.
 
-## Планируемое
+## Поддержка КПО
 
-- [Карта процесса-опыта](https://ashapiro.ru/xpm)
+Карта процесса-опыта включена как самостоятельный скилл. Снимок MCP от
+2026-11-06 содержит чтение, аудит, метаданные, участников, дорожки, строки,
+узлы, связи, аннотации и привязку рабочей истории КРИ.
 
-КПО остаётся планируемой, пока в публичном продукте и runtime-схеме MCP нет
-готовой модели операций. Не подменяйте её сущностями КРИ.
+Поддержка редактирования не означает поддержку всех функций интерфейса:
+экспорт КПО и отдельная ИИ-генерация КПО в проверенном контракте не заявлены.
+Перед работой проверяйте текущие схемы; не подменяйте КПО сущностями КРИ.
 
 Для нового инструмента или практики добавляется отдельная самодостаточная папка
 в `skills/`, документация в `docs/`, сценарии проверки в `tests/` и запись в
@@ -180,6 +189,9 @@ MCP и применять сквозные практики поверх эти�
 ├── catalog.json
 ├── CONTRIBUTING.md
 ├── skills/
+│   ├── experience-process-mapping/
+│   │   ├── SKILL.md
+│   │   └── references/
 │   ├── hypothesis-mapping/
 │   │   ├── SKILL.md
 │   │   └── references/

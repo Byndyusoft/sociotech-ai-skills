@@ -29,6 +29,15 @@
       "evals": "tests/hypothesis-mapping-evals.md"
     },
     {
+      "name": "experience-process-mapping",
+      "display_name": "Карта процесса-опыта",
+      "path": "skills/experience-process-mapping",
+      "status": "ready",
+      "source_url": "https://github.com/Byndyusoft/xp-mapping",
+      "docs": "docs/experience-process-mapping.md",
+      "evals": "tests/experience-process-mapping-evals.md"
+    },
+    {
       "name": "story-implementation-map",
       "display_name": "Карта реализации историй",
       "path": "skills/story-implementation-map",
